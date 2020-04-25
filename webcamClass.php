@@ -34,7 +34,7 @@ class webcamClass extends connectionClass{
     
     public function saveImageToDatabase($imageurl){
         $image=$imageurl;
-//        $image=  $this->changeImagetoBase64($image);          //if you want to go for base64 encode than enable this line
+        $image=  $this->changeImagetoBase64($image);          //if you want to go for base64 encode than enable this line
         if($image){
             $query="Insert into snapshot (Image) values('$image')";
             $result= $this->query($query);
@@ -44,6 +44,7 @@ class webcamClass extends connectionClass{
             else{
                 return "Image not saved to database";
             }
+            echo $result;
         }
     }
     

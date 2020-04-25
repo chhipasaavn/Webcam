@@ -9,25 +9,31 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <title>How to Use Webcam In PHP</title>
-    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">-->
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="https://gist.github.com/hellt/bc4fc51d6f1b9584605517f5c8d6a5a0" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
 
   <body>
+
     <div class="container">
-        <div class="row">Tutorial at <a href="http://www.vivekmoyal.in/how-to-use-webcam-in-php-using-html5-and-save-image-to-database/">www.vivekmoyal.in</a></div>
-        <div class="col-md-6">
+        <h3>Kindly take atleast 10 snapshots...</h3><br><br>
+
+  <div class="col-md-6">
             <div class="text-center">
         <div id="camera_info"></div>
     <div id="camera"></div><br>
     <button id="take_snapshots" class="btn btn-success btn-sm">Take Snapshots</button>
-      </div>
+            </div>
         </div>
         <div class="col-md-6">
             <table class="table table-bordered">
@@ -42,6 +48,9 @@
         </table>
         </div>
     </div> <!-- /container -->
+
+
+
   </body>
 </html>
 <style>

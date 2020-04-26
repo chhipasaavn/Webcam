@@ -1,3 +1,4 @@
+#This is an employee registration portal with integrated webcam image capturing
 # Webcam in PHP Using html5
 Use webcam in PHP using HTML5, Jquery and Save the Image to Database
 

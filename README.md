@@ -1,10 +1,10 @@
-#This is an employee registration portal with integrated webcam image capturing
-# Webcam in PHP Using html5
-Use webcam in PHP using HTML5, Jquery and Save the Image to Database
+>> This is an employee registration portal with integrated webcam image capturing
 
-This repository will help you to integrate and save the captured image to the database or local folder.
+>> Use webcam in PHP using HTML5, Jquery and Save the Image to Database
 
-# webcamClass.php
+>>This repository will help you to integrate and save the captured image to the database or local folder.
+
+>> webcamClass.php
 Here are some code structure to understand the important parts of this class.
 ````
 $imageFolder="your folder"; - This is your folder where you would like to save the file

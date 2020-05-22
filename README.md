@@ -34,3 +34,5 @@ action.php:- to show image at the same page we are taking snapshots
 
 webcamclass.php:- it contains the logic for saving images to local folder and database
 
+login.php:- this is lgin page where an employee can login with email and image verification or create a new account
+

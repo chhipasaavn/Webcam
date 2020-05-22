@@ -21,6 +21,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
   </head>
 
   <body>
@@ -60,8 +61,10 @@
 
     <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+      <input id="email" type="email" class="form-control" name="email" placeholder="Email">
     </div></br>
+
+
 
 
     <div class="radio">
@@ -84,7 +87,7 @@
     </div></br>
 
     <div class="form-group">
-  <label for="sel1">Select list:</label>
+  <label for="sel1">Job Profile:</label>
   <select class="form-control" id="sel1" name="job">
     <option value="Human Resource">Human Resource</option>
     <option value="Developer">Developer</option>

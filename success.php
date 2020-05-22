@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -23,7 +24,14 @@ $address = $_POST['address'];
 $eid = $_POST['eid'];
 
 
-$sql = "insert into employeedata(firstname, lastname, phone, email, gender, maritalstatus, jobprofile, address, empid) values ('$fname', '$lname', '$phone', '$email', '$gender', '$status', '$job', '$address', '$eid')";
+$_SESSION['eid'] = $eid;
+
+
+
+
+
+$sql = "insert into employeedata(firstname, lastname, phone, email, gender, maritalstatus, jobprofile, address, empid)
+         values ('$fname', '$lname', '$phone', '$email', '$gender', '$status', '$job', '$address', '$eid')";
 
 if (mysqli_query($conn, $sql)) {
     echo "Employee data saved successfully !!";

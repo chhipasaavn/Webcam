@@ -1,5 +1,8 @@
 <?php
 require_once( dirname( __FILE__ ) . '/connectionClass.php' );
+session_start();
+
+
 class webcamClass extends connectionClass{
     private $imageFolder="webcamImage/";
     
@@ -33,10 +36,11 @@ class webcamClass extends connectionClass{
     }
     
     public function saveImageToDatabase($imageurl){
+        $id = $_SESSION['eid'];
         $image=$imageurl;
         $image=  $this->changeImagetoBase64($image);          //if you want to go for base64 encode than enable this line
         if($image){
-            $query="Insert into snapshot (Image) values('$image')";
+            $query="Insert into snapshot (Image, eid) values('$image', '$id')";
             $result= $this->query($query);
             if($result){
                 return "Image saved to database";

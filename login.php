@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>How to Use Webcam In PHP</title>
+    <title>Employee Registration Portal</title>
    <!-- <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">-->
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -21,42 +21,42 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
+
   </head>
 
   <body>
 
     <div class="container">
-        <h3>Kindly take atleast 10 snapshots...</h3><br><br>
+      <h1>Login to your account</h1>
 
-  <div class="col-md-6">
-            <div class="text-center">
-        <div id="camera_info"></div>
+      <form action="" method="post"><br><br>
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="user" type="email" class="form-control" name="user" placeholder="User Email">
+    </div></br>
+
+    <h4>Kindly take a snapshot to verify User</h4><br><br>
     <div id="camera"></div><br>
+    <div class="text-left">
     <button id="take_snapshots" class="btn btn-success btn-sm">Take Snapshots</button>
             </div>
-        </div>
-        <div class="col-md-6">
-            <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Image</th><th>Image Name</th>
-                </tr>
-            </thead>
-            <tbody id="imagelist">
-            
-            </tbody>
-        </table>
-        </div>
-    </div> <!-- /container -->
+
+      <br>
+      <input type="submit" name="login" class="btn btn-danger" value="Login"> &nbsp Or  &nbsp
+      <input id="myButton" type="button" name="submit" class="btn btn-info" value="Sign up" onclick="location.href='index.php';">
+      
 
 
-
-  </body>
+    </form>
+    </body>
 </html>
+
 <style>
 #camera {
-  width: 100%;
-  height: 350px;
+  width: 35%;
+  height: 250px;
 }
 
 </style>
